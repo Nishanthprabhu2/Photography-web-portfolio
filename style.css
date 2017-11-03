@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: #2C2C2C;
+	text-align: center;
+	text-decoration: underline;
+}
+p {
+	font-family: 'Raleway', serif;
+	color: #2C2C2C;
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify;
+	font-weight: 300;
+}
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg) no-repeat 50% 50%;
+	background-size: cover;
+	display: table;
+	top: 0;
+}
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content {
+	max-width: 600px;
+	margin: auto;
+}
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000;
+}
+.content p {
+	color: #FFF;
+}
+.inner {
+	max-width: 600px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding: 10px;
+}
+/*--- Start Nav --*/
+nav {
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+}
+nav ul {
+	list-style: none;
+	float: left;
+}
+nav ul li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 120%;
+}
+nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+nav ul, nav:active ul {
+	display: none;
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000;
+}
+nav li {
+	width: 100%;
+	padding: 8px 0 10px 7px;
+	margin: 0;
+}
+nav:hover ul {
+	display: block;
+	position: absolute;
+}
+#menu-icon {
+	width: 30px;
+	height: 26px;
+	background: url(img/nav-icon.png) center;
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+/*---End Nav --*/
+.left-col {
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar {
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+.one-third-port {
+	width: 29.333333%;
+	padding: 2%;
+	float: left;
+}
+.one-third-port img:hover {
+	opacity: .6;
+}
+.contact p {
+	text-align: center;
+	letter-spacing: 5px;
+}
+.contact a {
+	color: #2C2C2C;
+	text-decoration: none;
+}
+.break {
+	display: none;
+}
+.clearfix {
+	clear: both;
+	height: 3%;
+}
+.parallax {
+	background: url("https://static.pexels.com/photos/30161/pexels-photo-30161.jpg") repeat fixed 100%;
+	opacity: .5;
+}
+.parallax-inner {
+	padding-top: 17%;
+}
+.social {
+	list-style-type: none;
+	text-align: center;
+}
+.social li {
+	display: inline;
+}
+.social i {
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2C2C2C;
+}
+.social i:hover {
+	color: #606060;
+}
+footer.second {
+	background-color: #2C2C2C;
+}
+footer.second p {
+	color: #FFF;
+	text-align: center;
+	padding: 5%;
+}
+@media screen and (max-width: 768px) {
+	#menu-icon {
+		margin: 26px 0 0 26px;
+	}
+	nav ul, nav:active ul {
+		padding: 8px 0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+	.inner {
+		font-size: 120%;
+	}
+	.content h1 {
+		font-size: 180%;
+	}
+	p {
+		font-size: 120%;
+	}
+	h2 {
+		font-size: 160%;
+	}
+	.left-col {
+		width: 96%;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	}
+	.sidebar {
+		width: 96%;
+		margin: 0 auto;
+	}
+	img {
+		padding: 2%;
+	}
+	.one-third-port {
+		width: 96%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.break {
+		display: block;
+	}
+	.parallax {
+		display: none;
+	}
+	.social i {
+		font-size: 170%;
+	}
+	#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+}
